@@ -12,20 +12,25 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container py-4 text-center">
       <h1>Lista Email Casuali</h1>
 
       <!-- bottone per generare (bonus) -->
-      <button id="generate-btn" class="btn btn-primary">Genera Email</button>
-      
+      <button id="generate-btn" class="btn btn-primary my-2">
+        Genera Email
+      </button>
+
       <!-- Caricamento(nascosto all'inizio) https://getbootstrap.com/docs/5.0/components/spinners/ -->
-      <div id="loader" class="d-none">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Caricamento in corso...</span>
-        </div>
+      <div id="loader" class="d-none my-3">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="hidden">Caricamento in corso...</p>
       </div>
       <!-- le email dovranno comparire in questa lista -->
-      <ul id="email-list" class="list-group"></ul>
+      <ul
+        id="email-list"
+        class="list-group mx-auto"
+        style="max-width: 350px"
+      ></ul>
     </div>
   </body>
 </html>
