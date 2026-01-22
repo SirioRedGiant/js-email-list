@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,13 @@
 
       <!-- bottone per generare (bonus) -->
       <button id="generate-btn" class="btn btn-primary">Genera Email</button>
-
+      
+      <!-- Caricamento(nascosto all'inizio) https://getbootstrap.com/docs/5.0/components/spinners/ -->
+      <div id="loader" class="d-none">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Caricamento in corso...</span>
+        </div>
+      </div>
       <!-- le email dovranno comparire in questa lista -->
       <ul id="email-list" class="list-group"></ul>
     </div>
