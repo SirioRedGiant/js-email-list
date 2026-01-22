@@ -29,6 +29,12 @@ button.addEventListener("click", function () {
         }
       })
 
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => {
+        console.error("Error:", error);
+
+        //note In caso di errore avviso l'utente e riattivo il bottone
+        loader.innerHTML = `<p class="text-danger">Si è verificato un errore, riprova</p>`;
+        button.disabled = false;
+      });
   }
 });
